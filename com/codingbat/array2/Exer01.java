@@ -9,8 +9,8 @@ public class Exer01 {
 	 * Return the number of even ints in the given array. Note: the % "mod" operator
 	 * computes the remainder, e.g. 5 % 2 is 1.
 	 * 
-	 * countEvens([2, 1, 2, 3, 4]) → 3 countEvens([2, 2, 0]) → 3 countEvens([1, 3,
-	 * 5]) → 0
+	 * countEvens([2, 1, 2, 3, 4]) â†’ 3 countEvens([2, 2, 0]) â†’ 3 countEvens([1, 3,
+	 * 5]) â†’ 0
 	 */
 	public static int countEvens(int[] nums) {
 		int evens = 0;
@@ -27,8 +27,8 @@ public class Exer01 {
 	 * largest and smallest values in the array. Note: the built-in Math.min(v1, v2)
 	 * and Math.max(v1, v2) methods return the smaller or larger of two values.
 	 * 
-	 * bigDiff([10, 3, 5, 6]) → 7 bigDiff([7, 2, 10, 9]) → 8 bigDiff([2, 10, 7, 2])
-	 * → 8
+	 * bigDiff([10, 3, 5, 6]) â†’ 7 bigDiff([7, 2, 10, 9]) â†’ 8 bigDiff([2, 10, 7, 2])
+	 * â†’ 8
 	 */
 	public static int bigDiff(int[] nums) {
 		int max = nums[0];
@@ -47,9 +47,9 @@ public class Exer01 {
 	 * smallest value, ignore just one copy, and likewise for the largest value. Use int division to produce 
 	 * the final average. You may assume that the array is length 3 or more.
 	 * 
-	 * centeredAverage([1, 2, 3, 4, 100]) → 3
-	 * centeredAverage([1, 1, 5, 5, 10, 8, 7]) → 5
-	 * centeredAverage([-10, -4, -2, -4, -2, 0]) → -3
+	 * centeredAverage([1, 2, 3, 4, 100]) â†’ 3
+	 * centeredAverage([1, 1, 5, 5, 10, 8, 7]) â†’ 5
+	 * centeredAverage([-10, -4, -2, -4, -2, 0]) â†’ -3
 	 */
 	public static int centeredAverage(int[] nums) {
 		int sum = 0;
@@ -71,9 +71,9 @@ public class Exer01 {
 	 * Except the number 13 is very unlucky, so it does not count and numbers that 
 	 * come immediately after a 13 also do not count.
 	 * 
-	 * sum13([1, 2, 2, 1]) → 6
-	 * sum13([1, 1]) → 2
-	 * sum13([1, 2, 2, 1, 13]) → 6
+	 * sum13([1, 2, 2, 1]) â†’ 6
+	 * sum13([1, 1]) â†’ 2
+	 * sum13([1, 2, 2, 1, 13]) â†’ 6
 	 */
 	public static int sum13(int[] nums) {
 		int sum = 0;
@@ -92,9 +92,9 @@ public class Exer01 {
 	 * starting with a 6 and extending to the next 7 
 	 * (every 6 will be followed by at least one 7). Return 0 for no numbers.
 	 * 
-	 * sum67([1, 2, 2]) → 5
-	 * sum67([1, 2, 2, 6, 99, 99, 7]) → 5
-	 * sum67([1, 1, 6, 7, 2]) → 4
+	 * sum67([1, 2, 2]) â†’ 5
+	 * sum67([1, 2, 2, 6, 99, 99, 7]) â†’ 5
+	 * sum67([1, 1, 6, 7, 2]) â†’ 4
 	 */
 	public static int sum67(int[] nums) {
 		int sum = 0;
@@ -116,9 +116,9 @@ public class Exer01 {
 	/*
 	 * Given an array of ints, return true if the array contains a 2 next to a 2 somewhere.
 	 * 
-	 * has22([1, 2, 2]) → true
-	 * has22([1, 2, 1, 2]) → false
-	 * has22([2, 1, 2]) → false
+	 * has22([1, 2, 2]) â†’ true
+	 * has22([1, 2, 1, 2]) â†’ false
+	 * has22([2, 1, 2]) â†’ false
 	 */
 	public static boolean has22(int[] nums) {
 		if(nums.length < 2) return false;
@@ -133,9 +133,9 @@ public class Exer01 {
 	/*
 	 * Given an array of ints, return true if the array contains no 1's and no 3's.
 	 * 
-	 * lucky13([0, 2, 4]) → true
-	 * lucky13([1, 2, 3]) → false
-	 * lucky13([1, 2, 4]) → false
+	 * lucky13([0, 2, 4]) â†’ true
+	 * lucky13([1, 2, 3]) â†’ false
+	 * lucky13([1, 2, 4]) â†’ false
 	 */
 	public boolean lucky13(int[] nums) {
 		for(int i = 0; i < nums.length; i++) {
@@ -148,9 +148,9 @@ public class Exer01 {
 	/*
 	 * Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.
 	 * 
-	 * sum28([2, 3, 2, 2, 4, 2]) → true
-	 * sum28([2, 3, 2, 2, 4, 2, 2]) → false
-	 * sum28([1, 2, 3, 4]) → false
+	 * sum28([2, 3, 2, 2, 4, 2]) â†’ true
+	 * sum28([2, 3, 2, 2, 4, 2, 2]) â†’ false
+	 * sum28([1, 2, 3, 4]) â†’ false
 	 */
 	public static boolean sum28(int[] nums) {
 		int sum = 0;
@@ -165,9 +165,9 @@ public class Exer01 {
 	/*
 	 * Given an array of ints, return true if the number of 1's is greater than the number of 4's
 	 * 
-	 * more14([1, 4, 1]) → true
-	 * more14([1, 4, 1, 4]) → false
-	 * more14([1, 1]) → true
+	 * more14([1, 4, 1]) â†’ true
+	 * more14([1, 4, 1, 4]) â†’ false
+	 * more14([1, 1]) â†’ true
 	 */
 	public boolean more14(int[] nums) {
 		int count1 = 0;
@@ -187,9 +187,9 @@ public class Exer01 {
 	 * so it just works. The syntax to make a new int array is: new int[desired_length]   
 	 * (See also: FizzBuzz Code)
 	 * 
-	 * fizzArray(4) → [0, 1, 2, 3]
-	 * fizzArray(1) → [0]
-	 * fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+	 * fizzArray(4) â†’ [0, 1, 2, 3]
+	 * fizzArray(1) â†’ [0]
+	 * fizzArray(10) â†’ [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 	 */
 	public static int[] fizzArray(int n) {
 		int[] result = new int[n];
@@ -203,9 +203,9 @@ public class Exer01 {
 	/*
 	 * Given an array of ints, return true if every element is a 1 or a 4.
 	 * 
-	 * only14([1, 4, 1, 4]) → true
-	 * only14([1, 4, 2, 4]) → false
-	 * only14([1, 1]) → true
+	 * only14([1, 4, 1, 4]) â†’ true
+	 * only14([1, 4, 2, 4]) â†’ false
+	 * only14([1, 1]) â†’ true
 	 */
 	public static boolean only14(int[] nums) {
 		for(int i = 0; i < nums.length; i++) {
@@ -223,9 +223,9 @@ public class Exer01 {
 	 * The syntax to make a new string array is: new String[desired_length]  
 	 * (See also: FizzBuzz Code)
 	 * 
-	 * fizzArray2(4) → ["0", "1", "2", "3"]
-	 * fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-	 * fizzArray2(2) → ["0", "1"]
+	 * fizzArray2(4) â†’ ["0", "1", "2", "3"]
+	 * fizzArray2(10) â†’ ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+	 * fizzArray2(2) â†’ ["0", "1"]
 	 */
 	public static String[] fizzArray2(int n) {
 		String[] res = new String[n];
@@ -235,11 +235,29 @@ public class Exer01 {
 		return res;
 	}
 	
+	// ----------------------------------------------------------------------------------------------------------
+	/*
+	 * Given an array of ints, return true if it contains no 1's or it contains no 4's.
+	 * 
+	 * no14([1, 2, 3]) → true
+	 * no14([1, 2, 3, 4]) → false
+	 * no14([2, 3, 4]) → true
+	 */
+	public static boolean no14(int[] nums) {
+		boolean has1 = false;
+		boolean has4 = false;
+		for (int i = 0; i < nums.length; i++) {
+			if(nums[i] == 1) has1 = true;
+			else if(nums[i] == 4) has4 = true;
+		}
+		return (!has1 || !has4);
+	}
+
+	
 
 	public static void main(String[] args) {
-		int[] nums = { 1, 1};
-		System.out.println(Arrays.toString(fizzArray2(4)));
-
+		int[] nums = {2, 3, 4};
+		System.out.println(no14(nums));
 	}
 
 }
