@@ -368,14 +368,33 @@ public class Exer01 {
 		}
 		return false;
 	}
+	
+	// ----------------------------------------------------------------------------------------------------------
+	/*
+	 * Given an array of ints, return true if the value 3 appears in the 
+	 * array exactly 3 times, and no 3's are next to each other.
+	 * 
+	 * haveThree([3, 1, 3, 1, 3]) → true
+	 * haveThree([3, 1, 3, 3]) → false
+	 * haveThree([3, 4, 3, 3, 4]) → false
+	 */
+	public static boolean haveThree(int[] nums) {
+		if(nums.length < 5) return false;
+		int count3 = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if(nums[i] == 3 && i < nums.length - 1 && nums[i+1] == 3) return false;
+			if(nums[i] == 3) count3++;
+		}
+		return count3 == 3;
+	}
 
 
 
 
 	
 	public static void main(String[] args) {
-		int[] nums = {2, 4, 2, 5};
-		System.out.println(modThree(nums));
+		int[] nums = {3, 4, 3, 3, 4};
+		System.out.println(haveThree(nums));
 	}
 
 }
