@@ -631,7 +631,7 @@ public class Exer01 {
 	 * zeroMax([0, 4, 0, 3]) → [3, 4, 3, 3]
 	 * zeroMax([0, 1, 0]) → [1, 1, 0]
 	 */
-	public int[] zeroMax(int[] nums) {
+	public static int[] zeroMax(int[] nums) {
 		int max = 0;
 
 		for (int i = nums.length - 1; i >= 0; i--) {
@@ -642,13 +642,39 @@ public class Exer01 {
 		}
 		return nums;
 	}
+	
+	// ----------------------------------------------------------------------------------------------------------
+	/*
+	 * Return an array that contains the exact same numbers as the given array, but rearranged so that 
+	 * all the even numbers come before all the odd numbers. Other than that, the numbers can 
+	 * be in any order. You may modify and return the given array, or make a new array.
+	 * 
+	 * evenOdd([1, 0, 1, 0, 0, 1, 1]) → [0, 0, 0, 1, 1, 1, 1]
+	 * evenOdd([3, 3, 2]) → [2, 3, 3]
+	 * evenOdd([2, 2, 2]) → [2, 2, 2]
+	 */
+	public static int[] evenOdd(int[] nums) {
+		int countE = 0;
+		int countO = nums.length - 1;
+		int[] array = new int[nums.length];
 
-		
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] % 2 == 0) {
+				array[countE] = nums[i];
+				countE++;
+			} else {
+				array[countO] = nums[i];
+				countO--;
+			}
+		}
+		return array;
+	}
+
 	
 	
 	public static void main(String[] args) {
-		int[] nums = { 1, 10, 10, 2 };
-		System.out.println(Arrays.toString(withoutTen(nums)));
+		int[] nums = { 3, 3, 2 };
+		System.out.println(Arrays.toString(evenOdd(nums)));
 	}
 
 }
